@@ -8,34 +8,26 @@
     }
   },
   "projects": {
-    "lib": {
+    "ngx-hd-lib": {
       "projectType": "library",
-      "root": "projects/lib",
-      "sourceRoot": "projects/lib/src",
+      "root": "projects/ngx-hd-lib",
+      "sourceRoot": "projects/ngx-hd-lib/src",
       "prefix": "hdl",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/lib/ng-package.json"
+            "project": "projects/ngx-hd-lib/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/lib/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-hd-lib/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/lib/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-hd-lib/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/lib/src/test.ts",
-            "tsConfig": "projects/lib/tsconfig.spec.json",
-            "karmaConfig": "projects/lib/karma.conf.js"
-          }
         }
       }
     }
