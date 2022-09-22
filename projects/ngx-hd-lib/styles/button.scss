@@ -1,0 +1,43 @@
+@mixin button($primary-color, $white) {
+  button, .button {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 550;
+    cursor: pointer;
+
+    &:active {
+      box-shadow: none;
+      transform: translateY(5px);
+    }
+
+    &.hd-s {
+      height: 3rem;
+      width: 8rem;
+      font-size: 1rem;
+    }
+
+    &.hd-m {
+      height: 4rem;
+      width: 10rem;
+      font-size: 1.5rem;
+    }
+
+    &.hd-l {
+      height: 5rem;
+      width: 12rem;
+      font-size: 2rem;
+    }
+
+    &.hd-primary {
+      background: $primary-color;
+      color: $white;
+    }
+
+    &.hd-neutral {
+      background: $white;
+      color: $primary-color;
+    }
+  }
+}
+

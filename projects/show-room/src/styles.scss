@@ -1,0 +1,10 @@
+@use 'node_modules/ngx-hd-lib/styles/styles' with (
+  $user-primary-color: #2f3d8c,
+  $user-primary-color-light: #bab892,
+  $user-white: #ffffff,
+  $user-black: #000000
+);
+
+html, body {
+  margin: 0;
+}

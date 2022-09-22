@@ -1,0 +1,17 @@
+@mixin input($primary-color, $primary-color-light, $white) {
+  input {
+    background-color: $white;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    min-height: 2rem;
+    box-shadow: inset 0 2px 4px 2px rgba(0, 0, 0, 0.12);
+
+    &:focus {
+      outline: solid $primary-color 1px;
+    }
+
+    &::placeholder {
+      color: $primary-color-light;
+    }
+  }
+}

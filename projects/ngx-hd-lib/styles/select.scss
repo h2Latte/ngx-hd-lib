@@ -1,0 +1,17 @@
+@mixin select($primary-color, $primary-color-light, $white) {
+  select {
+    border: 1px solid $primary-color;
+    background-color: $white;
+    color: $primary-color;
+    border-radius: 5px;
+    min-height: 2rem;
+
+    &:focus {
+      outline: solid $primary-color 1px;
+    }
+
+    option:first-child {
+      color: $primary-color-light;
+    }
+  }
+}

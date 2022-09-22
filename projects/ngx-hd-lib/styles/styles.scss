@@ -1,0 +1,19 @@
+@use "button" as *;
+@use "tag" as *;
+@use "input" as *;
+@use "select" as *;
+
+$user-primary-color: #00A385 !default;
+$user-primary-color-light: #92BAB3 !default;
+$user-white: #ffffff !default;
+$user-black: #000000 !default;
+
+@include button($user-primary-color, $user-white);
+@include input($user-primary-color, $user-primary-color-light, $user-white);
+@include select($user-primary-color, $user-primary-color-light, $user-white);
+@include tag($user-primary-color, $user-white);
+
+
+body {
+  font-family: Inter, sans-serif;
+}
